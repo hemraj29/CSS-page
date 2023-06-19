@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectangle Blocks Design</title>
+  <style>
+    body {
+      background-color: #F8F8F8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .upper-block {
+      background-color: yellow;
+      height: 200px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(255, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+    }
+
+    .text-above-circle {
+      font-size: 18px;
+      color: black;
+      margin-top: 10px;
+    }
+
+    .lower-block {
+      background-color: red;
+      height: 100px;
+      position: relative;
+    }
+
+    .triangle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      border-top: 50px solid yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="upper-block">
+      <div class="text-above-circle">Pinak Idea Lab</div>
+      <div class="circle">
+        <span>:)</span>
+      </div>
+    </div>
+    <div class="lower-block">
+      <div class="triangle"></div>
+    </div>
+  </div>
+</body>
+</html>
